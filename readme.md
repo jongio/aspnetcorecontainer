@@ -1,21 +1,33 @@
 # ASP.NET Core in a Container
 
-Here's a simple example for getting a ASP.NET Core project running in a Docker container.
+Here's a simple example for getting an ASP.NET Core project running in a Docker container.
+
+This was created to teach the core concepts of Docker.
+
+Definitions:
+- **Dockerfile**: A manifest file that describes your Docker Image.
+- **Docker Image**: The output of a build of your Dockerfile. Use `docker build` command to create a Docker Image.
+- **Docker Container**: An runtime instance of your Docker Image. Use `docker run` to start a new container instance.
 
 ## Pre-reqs
 
 1. Install **.NET Core SDK**: https://www.microsoft.com/net/core
 2. Install **Docker**: https://docs.docker.com/engine/installation/
+- If you are running Windows, [switch to Windows containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
-## Run It
+## Just Run the Sample
 To just run the sample: 
 1. Clone this repo
 2. Run `build.cmd` in the root.
+> The `build.cmd` file will build the aspnetcore project, copy the output to ./publish folder, build the Docker Image and run the Docker Container.
+
 3. Copy and Paste the outputted IP address into a browser.  
+
+
 
 You will see "Hello World" - an ASP.NET Core site hosted in a container!
 
-## Build It
+## Build the Sample from Scratch
 Follow these instructions to create this sample from scratch.
 
 ### 1. Create New Folder
