@@ -94,6 +94,35 @@ docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" aspnetcore-con
 
 Load the IP address returned in the previous step in a browser
 
+### 12. Connect to Container's Powershell Prompt
+
+To show that the container is running in an isolated space, we are going to see the process count difference between the container and the host machine.
+
+```
+docker exec -ti aspnetcore-container powershell
+```
+
+### 13. Get Container Process Count
+
+From the container's PowerShell prompt:
+
+```
+(Get-Process).Count
+```
+
+### 14. Get Host Machine Process Count
+
+If you are in cmd, run the following:
+```
+powershell (Get-Process).Count
+```
+
+If you are in a PS prompt, run the following:
+```
+(Get-Process).Count
+```
+
+
 ## Clean Up
 
 Execute the following command to remove the container before you re-run these steps.
