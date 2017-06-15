@@ -11,7 +11,7 @@ Definitions:
 
 ## Pre-reqs
 
-1. Install **.NET Core SDK**: https://www.microsoft.com/net/core
+1. Install **.NET Core SDK**: https://www.microsoft.com/net/core#windowscmd
 2. Install **Docker**: https://docs.docker.com/engine/installation/
 - If you are running Windows, [switch to Windows containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
